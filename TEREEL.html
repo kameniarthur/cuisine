@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire – Concours de Cuisine</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+    h1 {
+      text-align: center;
+      color: #d35400;
+    }
+    form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    .section-title {
+      background-color: #eee;
+      padding: 10px;
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+      border-left: 5px solid #d35400;
+    }
+    .submit-btn {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .submit-btn:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Formulaire d'inscription – Grand Concours de Cuisine 🍽️🔥</h1>
+
+<form>
+  <div class="section-title">Informations personnelles</div>
+
+  <label>Nom et Prénom :</label>
+  <input type="text" name="nom" required>
+
+  <label>Date de naissance :</label>
+  <input type="date" name="date_naissance" required>
+
+  <label>Adresse :</label>
+  <input type="text" name="adresse" required>
+
+  <label>Ville :</label>
+  <input type="text" name="ville" required>
+
+  <label>Code postal :</label>
+  <input type="text" name="code_postal" required>
+
+  <label>Téléphone :</label>
+  <input type="tel" name="telephone" required>
+
+  <label>E-mail :</label>
+  <input type="email" name="email" required>
+
+  <div class="section-title">Expérience culinaire</div>
+
+  <label>
+    <input type="radio" name="experience" value="Amateur"> Amateur
+  </label>
+  <label>
+    <input type="radio" name="experience" value="Etudiant"> Étudiant(e) en cuisine
+  </label>
+  <label>
+    <input type="radio" name="experience" value="Professionnel"> Professionnel(le)
+  </label>
+
+  <label>Si professionnel(le), indiquez votre spécialité :</label>
+  <input type="text" name="specialite">
+
+  <label>Avez-vous déjà participé à un concours de cuisine ?</label>
+  <label><input type="radio" name="concours" value="oui"> Oui</label>
+  <input type="text" name="nom_concours" placeholder="Précisez le nom">
+  <label><input type="radio" name="concours" value="non"> Non</label>
+
+  <div class="section-title">Votre candidature</div>
+
+  <label>Pourquoi souhaitez-vous participer à ce concours ?</label>
+  <textarea name="motivation" rows="4"></textarea>
+
+  <label>Quel plat signature aimeriez-vous présenter ?</label>
+  <textarea name="plat_signature" rows="2"></textarea>
+
+  <div class="section-title">Autorisations & engagements</div>
+
+  <label><input type="checkbox" name="reglement" required> J’accepte le règlement du concours et m’engage à respecter les consignes.</label>
+  <label><input type="checkbox" name="image" required> J’autorise les organisateurs à utiliser mon image pour la promotion du concours.</label>
+
+  <label>Date :</label>
+  <input type="date" name="date_signature" required>
+
+  <label>Signature :</label>
+  <input type="text" name="signature" placeholder="Saisissez votre nom complet">
+
+  <button type="submit" class="submit-btn">Envoyer ma candidature</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
