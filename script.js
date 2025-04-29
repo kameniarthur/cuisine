@@ -27,11 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
+        mode: "no-cors"  // Ajout du mode no-cors
       });
 
-      if (!response.ok) throw new Error("Échec de l'envoi");
-      const result = await response.text(); // Apps Script renvoie juste du texte
-
+      // Avec "no-cors", tu ne pourras pas vérifier la réponse ici.
       alert("✅ Candidature envoyée avec succès !");
       form.reset(); // Réinitialise le formulaire
     } catch (error) {
