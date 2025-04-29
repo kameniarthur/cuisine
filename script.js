@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    const googleScriptURL = "https://script.google.com/macros/s/AKfycbxgO-nBSGsUhnHKM4UCIgvwmuKMu6Vllh6YCG8kpnE-7W2cZVw-fNa8padIcUL0rwzY/exec";
+    const googleScriptURL = "https://script.google.com/macros/s/AKfycbzbAmZ9MJylHsGCXLmeyOJAUUW5iGuKcXhgRNJK5zorIwBlFZ7Ga8SJ48sov_ivBtCN/exec";
 
     try {
       const response = await fetch(googleScriptURL, {
