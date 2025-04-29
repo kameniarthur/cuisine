@@ -18,7 +18,7 @@ form.addEventListener("submit", async function(e) {
   });
 
   // 🟢 Remplace cette URL par celle générée par ton Apps Script
-  const googleScriptURL = "https://script.google.com/macros/s/AKfycbwtmAlq6RZZ2Od2DwEYjWMpw0bVkrGdZHpRVkOmM5DPn3QJj8-PB67jqH7XRExmydJk/exec";
+  const googleScriptURL = "https://script.google.com/macros/s/AKfycbzAA5uUQmcWMmJCOo00tYfPj8UF-BNT8JLGSst5quQiqOJWtdD5q1rwyrf9o0FL08oF/exec";
 
   try {
     const response = await fetch(googleScriptURL, {
